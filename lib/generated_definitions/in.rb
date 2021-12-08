@@ -12,7 +12,8 @@ module Holidays
 
     def self.holidays_by_month
       {
-                1 => [{:mday => 14, :name => "Makara Sankranti", :regions => [:in]},
+                1 => [{:mday => 1, :observed => "to_weekday_if_weekend(date)", :observed_arguments => [:date], :name => "New Year's Day", :regions => [:in]},
+            {:mday => 14, :name => "Makara Sankranti", :regions => [:in]},
             {:mday => 26, :name => "Republic Day", :regions => [:in]}],
       3 => [{:mday => 1, :name => "Maha Shivaratri", :regions => [:in]},
             {:mday => 18, :name => "Holi", :regions => [:in]},
